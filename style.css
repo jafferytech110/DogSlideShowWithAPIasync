@@ -1,12 +1,30 @@
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
+  font-family: sans-serif;
 }
 
 .app {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header h1 {
+  margin: 0 0 10px 0;
+}
+
+.header select {
+  font-size: 1rem;
 }
 
 .slideshow {
@@ -22,31 +40,15 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-/*   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center center; */
+  background-position: center center;
   opacity: 0;
   transform: scale(1);
-  transition: all 0.9s ease-out;
+  transition: all .9s ease-out;
 }
+
 .slide:nth-last-child(2) {
   opacity: 1;
-  transform: scale(1, 08);
-}
-
-.header {
-  margin: 10px;
-  padding: 5px;
-  text-align: center;
-}
-
-.header select {
-  font-size: 1.25rem;
-  outline: none;
-  padding: 7px 10px;
-  border: none;
-  border-radius: 10px;
+  transform: scale(1.08);
 }
