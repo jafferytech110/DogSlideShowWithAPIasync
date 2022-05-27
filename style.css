@@ -22,9 +22,12 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
+/*   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center center;
+  background-position: center center; */
   opacity: 0;
   transform: scale(1);
   transition: all 0.9s ease-out;
